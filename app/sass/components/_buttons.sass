@@ -1,0 +1,171 @@
+.btn
+  padding: 11px 30px
+  height: 56px
+  @include uppercase
+  font-weight: $font-weight-bold
+  border-radius: $borderRadius20
+  transition: all .5s ease
+
+  &:focus
+    box-shadow: none
+
+  &-main-color
+    color: $colorWhite
+    background: $colorMainHiBtn
+    border-color: $colorMainHiBtn
+    box-shadow: 0 12px 20px -12px $colorMainShadow
+
+    &:hover
+      color: $colorWhite
+
+  &-white
+    color: $colorMainHiBtn
+    background: $colorWhite
+    box-shadow: 0 20px 20px -12px $colorMainShadow
+
+    &:hover
+      transform: scale(1.1)
+
+  &-send
+    margin-top: 40px
+
+  &-hi
+    height: 50px
+    padding: 10px 20px
+    min-width: 100px
+    text-transform: uppercase
+    font-weight: $font-weight-bold
+    font-size: $font-size-16
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: auto
+    top: 25px
+    right: 45px
+    bottom: auto
+    z-index: 1000
+
+    @media (max-width: $screen-sm)
+      right: 20px
+      top: 20px
+
+    &:hover
+      text-decoration: unset
+
+  &-hi-close
+    position: relative
+    padding: 0
+    width: 32px
+    height: 22px
+
+    .icon-bar
+      display: block
+      position: absolute
+      background-color: #2b3336
+      width: 100%
+      height: 2px
+      border-radius: 100px
+      transition: all 500ms ease-in-out
+
+      &:nth-of-type(2)
+        top: 10px
+        width: 50%
+        right: 0
+
+      &:nth-of-type(3)
+        top: 20px
+
+
+/* Buzz Out
+@-webkit-keyframes hvr-buzz-out
+  10%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+  20%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+  30%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+  40%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+  50%
+    -webkit-transform: translateX(2px) rotate(1deg)
+    transform: translateX(2px) rotate(1deg)
+
+  60%
+    -webkit-transform: translateX(-2px) rotate(-1deg)
+    transform: translateX(-2px) rotate(-1deg)
+
+  70%
+    -webkit-transform: translateX(2px) rotate(1deg)
+    transform: translateX(2px) rotate(1deg)
+
+  80%
+    -webkit-transform: translateX(-2px) rotate(-1deg)
+    transform: translateX(-2px) rotate(-1deg)
+
+  90%
+    -webkit-transform: translateX(1px) rotate(0)
+    transform: translateX(1px) rotate(0)
+
+  100%
+    -webkit-transform: translateX(-1px) rotate(0)
+    transform: translateX(-1px) rotate(0)
+
+@keyframes hvr-buzz-out
+  10%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+  20%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+  30%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+  40%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+  50%
+    -webkit-transform: translateX(2px) rotate(1deg)
+    transform: translateX(2px) rotate(1deg)
+
+  60%
+    -webkit-transform: translateX(-2px) rotate(-1deg)
+    transform: translateX(-2px) rotate(-1deg)
+
+  70%
+    -webkit-transform: translateX(2px) rotate(1deg)
+    transform: translateX(2px) rotate(1deg)
+
+  80%
+    -webkit-transform: translateX(-2px) rotate(-1deg)
+    transform: translateX(-2px) rotate(-1deg)
+
+  90%
+    -webkit-transform: translateX(1px) rotate(0)
+    transform: translateX(1px) rotate(0)
+
+  100%
+    -webkit-transform: translateX(-1px) rotate(0)
+    transform: translateX(-1px) rotate(0)
+
+.hvr-buzz-out
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+
+  &:hover, &:focus, &:active
+    animation-name: hvr-buzz-out
+    animation-duration: 0.75s
+    animation-timing-function: linear
+    animation-iteration-count: 1

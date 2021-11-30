@@ -1,0 +1,72 @@
+.navbar-top
+  padding: 10px 45px
+
+  @media (max-width: $screen-lg)
+    padding: 10px 25px
+
+  @media (max-width: $screen-sm)
+    padding-left: 20px
+    padding-right: 20px
+
+  .navbar-brand
+    color: $colorMain
+    font-weight: $font-weight-bold
+    font-size: 38px
+    max-width: 120px
+    white-space: normal
+    line-height: 30px
+
+    @media (max-width: $screen-sm)
+      font-size: 28px
+      line-height: 28px
+      max-width: 80px
+
+  .navbar-top-inner
+    @media (max-width: 991px)
+      flex: 1
+      max-width: 100%
+      display: flex
+      align-items: center
+
+  .navbar-nav
+    align-items: center
+    position: relative
+
+    @media (max-width: 991px)
+      padding-bottom: 40px
+
+  .navbar-nav
+    @media (max-width: 991px)
+      padding-top: 30px
+
+    .nav-link
+      overflow: visible
+      width: auto
+      max-width: none
+      margin-right: 25px
+      margin-left: 25px
+      color: $colorBlack
+      font-size: $font-size-19px
+      font-weight: $font-weight-medium
+      padding: 0px
+      transition: all 150ms ease
+
+      &:hover
+        transform: scale(1.05)
+        color: $colorMainHiBtn
+
+    @media (max-width: 991px)
+      margin-bottom: 20px
+      width: 100%
+
+  .navbar-collapse
+    @media (max-width: 991px)
+      background: $colorWhite
+      border-radius: 20px
+      position: absolute
+      width: calc(100% - 40px)
+      height: 100vh
+      top: 80px
+      left: 0
+      z-index: 99
+      margin: 20px

@@ -1,0 +1,85 @@
+.form-holder
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  padding-right: 10%
+  position: absolute
+  bottom: 120px
+
+  .form-holder-inner
+    width: 100%
+    max-width: 525px
+
+.form-control
+  height: 60px
+  padding: 0px
+  border-style: solid
+  border-width: 0px 0px 1px
+  border-color: $colorBlackDark
+  background-color: transparent
+  color: $colorBlackDark
+  font-size: 22px
+  line-height: 20px
+  border-radius: 0
+
+  &:focus
+    background: transparent
+    outline: none !important
+    box-shadow: none
+    color: $colorBlackDark
+    border-color: $coloInputFocus
+
+.form-inline
+  .form-group
+    flex: 1
+    max-width: 350px
+
+.form-custom
+  .form-group
+    position: relative
+
+  input
+    width: 100%
+
+  label
+    position: absolute
+    z-index: 1
+    top: 15px
+    left: 0
+    color: $colorBlackDark
+    transition: transform .4s ease
+
+  input:focus + label, .focus-label + label
+    transform-origin: left
+    transform: translateY(-36px)
+    font-size: $font-size-14
+
+.form-custom-modal
+  padding-top: 30px
+
+  label
+    font-weight: $font-weight-normal
+    font-size: $font-size-18
+    color: $colorBlackDark
+    padding-left: 15px
+
+  .form-control
+    padding: 0
+
+  input:focus + label, .focus-label + label
+    font-size: $font-size-14
+
+.error
+  color: $errorColor
+  font-size: $font-size-16
+  line-height: normal
+
+  .error-text
+    padding-top: 5px
+
+  .form-control
+    border-color: $errorColor
+
+
+

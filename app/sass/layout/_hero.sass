@@ -1,0 +1,126 @@
+.hero-wrapper
+  height: 100vh
+  min-height: 700px
+  max-height: 700px
+
+  @media (max-width: $screen-md)
+    height: 90vh
+    min-height: unset
+    max-height: unset
+
+  &-inner
+    padding: 150px 0 20px
+
+    @media (max-width: $screen-lg)
+      padding-top: 120px
+      padding-bottom: 40px
+
+.sub-title
+  margin-top: 20px
+  margin-left: 0px
+  color: $colorMainHiBtn
+  font-size: $font-size-28
+  line-height: 35px
+  font-weight: $font-weight-medium
+  letter-spacing: -0.5px
+  text-transform: none
+  animation-delay: 1.3s
+
+.logo
+  max-width: 170px
+
+.hero-row
+  @media (min-width: $screen-lg)
+    padding-left: 150px
+
+.hero-bg-icons
+  @media (min-width: $screen-lg)
+    padding-bottom: 110px
+
+.hero-wrapper-left
+  @media (min-width: $screen-lg)
+    max-width: 630px
+    padding-top: 30px
+
+  @media (max-width: $screen-lg) and (min-width: $screen-md)
+    padding-left: 15px
+
+.plant-animation-wrap
+  position: absolute
+  z-index: -1
+
+.plant-animation
+  &--1
+    width: 250px
+    height: 450px
+    top: -5px
+    left: -25px
+    animation-delay: 0.3s
+
+    @media (max-width: $screen-md)
+      display: none
+
+  &--2
+    left: 50vw
+    top: -150px
+    right: 0%
+    bottom: 0%
+    display: block
+    width: 500px
+    height: 500px
+
+    @media (max-width: $screen-sm)
+      top: -60px
+
+  &--3
+    left: 20vw
+    top: 440px
+    width: 350px
+    height: 350px
+    animation-delay: 0.5s
+
+    @media (max-width: $screen-sm)
+      display: none
+
+  &--4
+    top: 330px
+    left: 81vw
+    width: 450px
+    height: 450px
+
+    @media (max-width: $screen-sm)
+      top: 330px
+      left: 0
+      width: 400px
+      height: 500px
+
+.cloud-header-img-bg
+  width: 100%
+  height: 100%
+
+  &--1
+    animation: floating 5s ease-in-out infinite
+
+  &--2
+    animation: floating 7s ease-in-out infinite
+
+  &--3
+    animation: floating 3s ease-in-out infinite
+
+  &--4
+    animation: floating 10s ease-in-out infinite
+
+@keyframes floating
+  from
+    transform: translate(0, 0px)
+  65%
+    transform: translate(0, 25px)
+  to
+    transform: translate(0, -0px)
+
+.object
+  position: absolute
+  max-width: 100%
+  max-height: 100%
+  object-fit: contain
+  transition: transform 0.3s linear

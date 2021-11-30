@@ -1,0 +1,64 @@
+.toggle-rigth-hi
+  position: fixed
+  left: auto
+  top: 0
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  right: -100%
+  z-index: 1000
+  display: flex
+  overflow: visible
+  height: 100%
+  width: 45%
+  padding: 40px 50px 60px
+  background-color: $colorWhite
+  transition: right 0.6s ease
+
+.toggle-hi-active
+  right: 0
+
+  @media (max-width: $screen-lg)
+    width: 500px
+
+  @media (max-width: $screen-sm)
+    width: 100%
+
+  .icon-bar
+    &:nth-of-type(1)
+      top: 10px
+      transform: rotate(45deg)
+
+    &:nth-of-type(2)
+      background-color: transparent
+
+    &:nth-of-type(3)
+      top: 10px
+      transform: rotate(-45deg)
+
+
+.blur
+  filter: blur(8px)
+
+.rigth-hi-inner
+  max-width: 450px
+  margin-top: 60px
+  margin-bottom: 60px
+  color: $colorBlackDark
+  font-size: 70px
+  line-height: 80px
+  text-align: left
+  letter-spacing: -2px
+  font-weight: 500
+  max-width: 450px
+
+  @media (max-width: $screen-lg)
+    font-size: 40px
+    line-height: 50px
+
+  a
+    color: $colorBlackDark
+    text-decoration: underline
+
+    &:hover
+      color: $colorBlackDark

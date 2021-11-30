@@ -1,0 +1,48 @@
+.stay-updated
+  background-color: $colorGreyLight
+  transition: transform 0.3s linear
+
+  @media (max-width: 1239px)
+    width: 100%
+
+  @media (max-width: $screen-sm)
+    width: 100%
+    margin-bottom: 20px
+
+  &-col
+    display: flex
+    align-items: stretch
+
+.section-subtitle
+  margin-top: 30px
+  font-size: $font-size-30
+  line-height: $lineHeight40px
+
+.stay-updated-col
+  flex: 0 0 580px
+  max-width: 580px
+  position: relative
+
+  @media (max-width: 1239px)
+    margin-top: 40px
+    flex: 0 0 100%
+    max-width: 100%
+    padding-left: 15px
+    padding-right: 15px
+
+  .section-title-h3
+    display: flex
+    align-items: center
+
+    &:after
+      content: ''
+      margin-left: 30px
+      width: 55px
+      height: 44px
+      display: inline-block
+      background: url("../img/mail.svg") no-repeat center
+
+.stay-updated-success
+  color: $colorMainHiBtn
+  text-align: center
+  padding-top: 50px

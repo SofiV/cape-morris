@@ -1,0 +1,78 @@
+.section-inside-title
+  color: $colorWhiteLight
+  font-size: $font-size-26
+  line-height: $lineHeight35px
+  font-weight: $font-weight-medium
+  letter-spacing: 4px
+  text-transform: uppercase
+
+  @media (min-width: $screen-lg)
+    margin-bottom: 40px
+
+  @media (max-width: $screen-sm)
+    padding-bottom: 50px
+
+.section-inside-text
+  max-width: 720px
+  margin-top: 50px
+  margin-bottom: 60px
+
+  @media (max-width: $screen-sm)
+    font-size: $font-size-18
+    line-height: 30px
+    margin-top: 10px
+
+.about-us
+  margin-bottom: 40px
+  position: relative
+  overflow: hidden
+
+  @media (max-width: $screen-lg)
+    background-position: bottom -56px right 20px
+    background-size: 150px auto
+
+  @media (max-width: $screen-sm)
+    background-position: bottom -42px right 10px
+    background-size: 100px auto
+
+  .icon-about
+    position: absolute
+
+    &--1
+      top: 10%
+      right: 10%
+      width: 150px
+      height: 150px
+      background: url("../img/heart_1.png") center no-repeat
+      background-size: contain
+
+      @media (max-width: 1200px)
+        top: 20px
+        right: 20px
+        width: 90px
+        height: 90px
+
+    &--2
+      top: 40%
+      right: 20%
+      width: 100px
+      height: 100px
+      background: url("../img/heart_2.png") center no-repeat
+      background-size: contain
+
+      @media (max-width: 1200px)
+        display: none
+
+    &--3
+      top: 60%
+      right: 10%
+      width: 50px
+      height: 50px
+      background: url("../img/heart_3.png") center no-repeat
+      background-size: contain
+
+      @media (max-width: 1200px)
+        display: none
+
+
+

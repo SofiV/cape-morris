@@ -1,0 +1,36 @@
+.services
+  overflow: hidden
+
+.arrow-services
+  position: absolute
+  left: auto
+  top: 160px
+  right: -10px
+  bottom: auto
+  z-index: 10
+  width: 150px
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  transform: rotate(-11deg)
+
+  @media (max-width: $screen-sm)
+    display: none
+
+  path
+    animation-delay: .5s
+
+.section-services-link
+  max-width: 800px
+  margin-top: 40px
+  color: $colorBlackDark
+  font-size: $font-size-65
+  line-height: $lineHeight90px
+  font-weight: $font-weight-bold
+
+  @media (max-width: $screen-sm)
+    font-size: $font-size-40
+    line-height: $lineHeight35px
+
+  &:hover
+    color: $colorBlackDark
